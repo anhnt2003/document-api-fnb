@@ -1,0 +1,72 @@
+---
+id: deletes-an-existing-product-category
+title: "Deletes an existing product category"
+description: "Deletes an existing product category by ID."
+sidebar_label: "Deletes an existing product category"
+hide_title: true
+hide_table_of_contents: true
+api: {"tags":["Category"],"description":"Deletes an existing product category by ID.","parameters":[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int64"}}],"responses":{"200":{"description":"Returns the deleted category","content":{"text/plain":{"schema":{"required":["name"],"type":"object","properties":{"id":{"type":"integer","format":"int64"},"name":{"type":"string","nullable":true},"rank":{"type":"integer","format":"int32","nullable":true},"parentId":{"type":"integer","format":"int64","nullable":true}},"additionalProperties":false,"title":"RemoveProductCategoryResponse"}},"application/json":{"schema":{"required":["name"],"type":"object","properties":{"id":{"type":"integer","format":"int64"},"name":{"type":"string","nullable":true},"rank":{"type":"integer","format":"int32","nullable":true},"parentId":{"type":"integer","format":"int64","nullable":true}},"additionalProperties":false,"title":"RemoveProductCategoryResponse"}},"text/json":{"schema":{"required":["name"],"type":"object","properties":{"id":{"type":"integer","format":"int64"},"name":{"type":"string","nullable":true},"rank":{"type":"integer","format":"int32","nullable":true},"parentId":{"type":"integer","format":"int64","nullable":true}},"additionalProperties":false,"title":"RemoveProductCategoryResponse"}}}},"400":{"description":"If the request is invalid"}},"method":"delete","path":"/api/Category/{id}","info":{"title":"KvFnB API","version":"v1"},"postman":{"name":"Deletes an existing product category","description":{"content":"Deletes an existing product category by ID.","type":"text/plain"},"url":{"path":["api","Category",":id"],"host":["{{baseUrl}}"],"query":[],"variable":[{"disabled":false,"description":{"content":"(Required) ","type":"text/plain"},"type":"any","value":"","key":"id"}]},"header":[{"key":"Accept","value":"text/plain"}],"method":"DELETE"}}
+sidebar_class_name: "delete api-method"
+info_path: docs/getting-started/apis/openapi/kvfnb-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Deletes an existing product category"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"delete"}
+  path={"/api/Category/{id}"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+| URL | Description |
+| ---- | ----- |
+| https://open-dev.kvfnb.vip | FnB Open Api Development | 
+    
+
+Deletes an existing product category by ID.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={[{"name":"id","in":"path","required":true,"schema":{"type":"integer","format":"int64"}}]}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={undefined}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the deleted category","content":{"text/plain":{"schema":{"required":["name"],"type":"object","properties":{"id":{"type":"integer","format":"int64"},"name":{"type":"string","nullable":true},"rank":{"type":"integer","format":"int32","nullable":true},"parentId":{"type":"integer","format":"int64","nullable":true}},"additionalProperties":false,"title":"RemoveProductCategoryResponse"}},"application/json":{"schema":{"required":["name"],"type":"object","properties":{"id":{"type":"integer","format":"int64"},"name":{"type":"string","nullable":true},"rank":{"type":"integer","format":"int32","nullable":true},"parentId":{"type":"integer","format":"int64","nullable":true}},"additionalProperties":false,"title":"RemoveProductCategoryResponse"}},"text/json":{"schema":{"required":["name"],"type":"object","properties":{"id":{"type":"integer","format":"int64"},"name":{"type":"string","nullable":true},"rank":{"type":"integer","format":"int32","nullable":true},"parentId":{"type":"integer","format":"int64","nullable":true}},"additionalProperties":false,"title":"RemoveProductCategoryResponse"}}}},"400":{"description":"If the request is invalid"}}}
+>
+  
+</StatusCodes>
+

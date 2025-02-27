@@ -1,0 +1,72 @@
+---
+id: creates-a-new-product-category
+title: "Creates a new product category"
+description: "Creates a new product category with the provided details."
+sidebar_label: "Creates a new product category"
+hide_title: true
+hide_table_of_contents: true
+api: {"tags":["Category"],"description":"Creates a new product category with the provided details.","requestBody":{"content":{"application/json":{"schema":{"required":["name"],"type":"object","properties":{"name":{"type":"string","nullable":true},"parentId":{"type":"integer","format":"int64","nullable":true}},"additionalProperties":false,"title":"CreateProductCategoryRequest"}},"text/json":{"schema":{"required":["name"],"type":"object","properties":{"name":{"type":"string","nullable":true},"parentId":{"type":"integer","format":"int64","nullable":true}},"additionalProperties":false,"title":"CreateProductCategoryRequest"}},"application/*+json":{"schema":{"required":["name"],"type":"object","properties":{"name":{"type":"string","nullable":true},"parentId":{"type":"integer","format":"int64","nullable":true}},"additionalProperties":false,"title":"CreateProductCategoryRequest"}}}},"responses":{"200":{"description":"Returns the newly created category","content":{"text/plain":{"schema":{"required":["name"],"type":"object","properties":{"id":{"type":"integer","format":"int64"},"name":{"type":"string","nullable":true},"parentId":{"type":"integer","format":"int64","nullable":true}},"additionalProperties":false,"title":"CreateProductCategoryResponse"}},"application/json":{"schema":{"required":["name"],"type":"object","properties":{"id":{"type":"integer","format":"int64"},"name":{"type":"string","nullable":true},"parentId":{"type":"integer","format":"int64","nullable":true}},"additionalProperties":false,"title":"CreateProductCategoryResponse"}},"text/json":{"schema":{"required":["name"],"type":"object","properties":{"id":{"type":"integer","format":"int64"},"name":{"type":"string","nullable":true},"parentId":{"type":"integer","format":"int64","nullable":true}},"additionalProperties":false,"title":"CreateProductCategoryResponse"}}}},"400":{"description":"If the request is invalid"}},"method":"post","path":"/api/Category","jsonRequestBodyExample":{"name":"string","parentId":0},"info":{"title":"KvFnB API","version":"v1"},"postman":{"name":"Creates a new product category","description":{"content":"Creates a new product category with the provided details.","type":"text/plain"},"url":{"path":["api","Category"],"host":["{{baseUrl}}"],"query":[],"variable":[]},"header":[{"key":"Content-Type","value":"application/json"},{"key":"Accept","value":"text/plain"}],"method":"POST","body":{"mode":"raw","raw":"","options":{"raw":{"language":"json"}}}}}
+sidebar_class_name: "post api-method"
+info_path: docs/getting-started/apis/openapi/kvfnb-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Creates a new product category"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"post"}
+  path={"/api/Category"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+| URL | Description |
+| ---- | ----- |
+| https://open-dev.kvfnb.vip | FnB Open Api Development | 
+    
+
+Creates a new product category with the provided details.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"required":["name"],"type":"object","properties":{"name":{"type":"string","nullable":true},"parentId":{"type":"integer","format":"int64","nullable":true}},"additionalProperties":false,"title":"CreateProductCategoryRequest"}},"text/json":{"schema":{"required":["name"],"type":"object","properties":{"name":{"type":"string","nullable":true},"parentId":{"type":"integer","format":"int64","nullable":true}},"additionalProperties":false,"title":"CreateProductCategoryRequest"}},"application/*+json":{"schema":{"required":["name"],"type":"object","properties":{"name":{"type":"string","nullable":true},"parentId":{"type":"integer","format":"int64","nullable":true}},"additionalProperties":false,"title":"CreateProductCategoryRequest"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the newly created category","content":{"text/plain":{"schema":{"required":["name"],"type":"object","properties":{"id":{"type":"integer","format":"int64"},"name":{"type":"string","nullable":true},"parentId":{"type":"integer","format":"int64","nullable":true}},"additionalProperties":false,"title":"CreateProductCategoryResponse"}},"application/json":{"schema":{"required":["name"],"type":"object","properties":{"id":{"type":"integer","format":"int64"},"name":{"type":"string","nullable":true},"parentId":{"type":"integer","format":"int64","nullable":true}},"additionalProperties":false,"title":"CreateProductCategoryResponse"}},"text/json":{"schema":{"required":["name"],"type":"object","properties":{"id":{"type":"integer","format":"int64"},"name":{"type":"string","nullable":true},"parentId":{"type":"integer","format":"int64","nullable":true}},"additionalProperties":false,"title":"CreateProductCategoryResponse"}}}},"400":{"description":"If the request is invalid"}}}
+>
+  
+</StatusCodes>
+

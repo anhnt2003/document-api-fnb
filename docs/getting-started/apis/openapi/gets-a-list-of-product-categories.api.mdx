@@ -1,0 +1,72 @@
+---
+id: gets-a-list-of-product-categories
+title: "Gets a list of product categories"
+description: "Gets a list of product categories."
+sidebar_label: "Gets a list of product categories"
+hide_title: true
+hide_table_of_contents: true
+api: {"tags":["Category"],"description":"Gets a list of product categories.","requestBody":{"content":{"application/json":{"schema":{"type":"object","additionalProperties":false,"title":"GetCategoriesRequest"}},"text/json":{"schema":{"type":"object","additionalProperties":false,"title":"GetCategoriesRequest"}},"application/*+json":{"schema":{"type":"object","additionalProperties":false,"title":"GetCategoriesRequest"}}}},"responses":{"200":{"description":"Returns the list of categories","content":{"text/plain":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","format":"int64"},"name":{"type":"string","nullable":true},"parentId":{"type":"integer","format":"int64","nullable":true}},"additionalProperties":false,"title":"GetCategoriesResponse"}}},"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","format":"int64"},"name":{"type":"string","nullable":true},"parentId":{"type":"integer","format":"int64","nullable":true}},"additionalProperties":false,"title":"GetCategoriesResponse"}}},"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","format":"int64"},"name":{"type":"string","nullable":true},"parentId":{"type":"integer","format":"int64","nullable":true}},"additionalProperties":false,"title":"GetCategoriesResponse"}}}}},"400":{"description":"If the request is invalid"}},"method":"get","path":"/api/Category","jsonRequestBodyExample":{},"info":{"title":"KvFnB API","version":"v1"},"postman":{"name":"Gets a list of product categories","description":{"content":"Gets a list of product categories.","type":"text/plain"},"url":{"path":["api","Category"],"host":["{{baseUrl}}"],"query":[],"variable":[]},"header":[{"key":"Content-Type","value":"application/json"},{"key":"Accept","value":"text/plain"}],"method":"GET","body":{"mode":"raw","raw":"","options":{"raw":{"language":"json"}}}}}
+sidebar_class_name: "get api-method"
+info_path: docs/getting-started/apis/openapi/kvfnb-api
+custom_edit_url: null
+---
+
+import MethodEndpoint from "@theme/ApiExplorer/MethodEndpoint";
+import ParamsDetails from "@theme/ParamsDetails";
+import RequestSchema from "@theme/RequestSchema";
+import StatusCodes from "@theme/StatusCodes";
+import OperationTabs from "@theme/OperationTabs";
+import TabItem from "@theme/TabItem";
+import Heading from "@theme/Heading";
+
+<Heading
+  as={"h1"}
+  className={"openapi__heading"}
+  children={"Gets a list of product categories"}
+>
+</Heading>
+
+<MethodEndpoint
+  method={"get"}
+  path={"/api/Category"}
+  context={"endpoint"}
+>
+  
+</MethodEndpoint>
+
+| URL | Description |
+| ---- | ----- |
+| https://open-dev.kvfnb.vip | FnB Open Api Development | 
+    
+
+Gets a list of product categories.
+
+<Heading
+  id={"request"}
+  as={"h2"}
+  className={"openapi-tabs__heading"}
+  children={"Request"}
+>
+</Heading>
+
+<ParamsDetails
+  parameters={undefined}
+>
+  
+</ParamsDetails>
+
+<RequestSchema
+  title={"Body"}
+  body={{"content":{"application/json":{"schema":{"type":"object","additionalProperties":false,"title":"GetCategoriesRequest"}},"text/json":{"schema":{"type":"object","additionalProperties":false,"title":"GetCategoriesRequest"}},"application/*+json":{"schema":{"type":"object","additionalProperties":false,"title":"GetCategoriesRequest"}}}}}
+>
+  
+</RequestSchema>
+
+<StatusCodes
+  id={undefined}
+  label={undefined}
+  responses={{"200":{"description":"Returns the list of categories","content":{"text/plain":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","format":"int64"},"name":{"type":"string","nullable":true},"parentId":{"type":"integer","format":"int64","nullable":true}},"additionalProperties":false,"title":"GetCategoriesResponse"}}},"application/json":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","format":"int64"},"name":{"type":"string","nullable":true},"parentId":{"type":"integer","format":"int64","nullable":true}},"additionalProperties":false,"title":"GetCategoriesResponse"}}},"text/json":{"schema":{"type":"array","items":{"type":"object","properties":{"id":{"type":"integer","format":"int64"},"name":{"type":"string","nullable":true},"parentId":{"type":"integer","format":"int64","nullable":true}},"additionalProperties":false,"title":"GetCategoriesResponse"}}}}},"400":{"description":"If the request is invalid"}}}
+>
+  
+</StatusCodes>
+
