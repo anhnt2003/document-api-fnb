@@ -12,7 +12,7 @@ import { kvOpenApiMdGenerator } from './customMdGenerators';
 const config: Config = {
   title: 'KiotViet FnB Developer',
   tagline: 'Build for developers, by developers.',
-  favicon: 'img/icon.svg',
+  favicon: 'img/logo.jpeg',
 
   // Set the production url of your site here
   url: 'https://developer.fnb.kiotviet.vn',
@@ -93,14 +93,20 @@ const config: Config = {
       logo: {
         alt: 'KiotViet FnB Developer',
         src: 'img/icon.svg',
+        srcDark: 'img/icon-dark.svg',
       },
       items: [
         {
           type: 'docSidebar',
           sidebarId: 'tutorialSidebar',
-          position: 'left',
-          label: 'Open API',
+          position: 'left', 
+          label: 'Docs',
         },
+        // {
+        //   type: 'custom',
+        //   component: InputSearch,
+        //   position: 'right',
+        // }
       ],
     },
     prism: {
